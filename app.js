@@ -30,7 +30,7 @@ app.get("/about", function (req, res) {
 app.get("/contact", function (req, res) {
   res.render("contact", { contactContent: contactContent });
 });
-app.get(__dirname+"/compose", function (req, res) {
+app.get("/compose", function (req, res) {
   res.render("compose");
 });
 app.post("/compose", function (req, res) {
